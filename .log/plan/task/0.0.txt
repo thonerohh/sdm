@@ -16,3 +16,15 @@ Y. What type of official data form?
 n. What type of data?
 1. I do not know
 2. I do certainly prepared
+
+n.2.How was You certainly prepared?
+1. Unstructured Visualisation
+2. Sentence based Visualisation
+3. Sequence based visualisation
+
+n.2.1.What is most common to describe a data?
+1. Commas and periods
+2. Title and paragraphs
+3. Prescription and postcription
+
+n.2.2.Insert data in form of sentences separated with commas  

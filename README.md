@@ -2,6 +2,7 @@
 ## This is demo minimized structure data generator. 
 # SDM - Structured data, minified
 Written by Rohh Thone or Rokhkh Von for iTrade or IB Lezhnikov Timofey Yurievich
+I give no acception to reorder this sequence. I will give acceptance with personal compliance and legal sign.
 
 There are standard CC license for fair use.
 
