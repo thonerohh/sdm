@@ -31,3 +31,6 @@ I am not sure that someone will dare to ask me, but karma will drive both of us 
 The difference between pirate and monopolyst? Pirate is helping monopolyst feel better, monopolyst just helping pirate
 
 ** just another joke
+There are sins everywhere, we can't bend, we should strive upon knees.. 
+connecting feet to feet without any knee breaking.
+Yog -a?
