@@ -1,0 +1,10 @@
+List of questions:
+Response the list of previous answers before every new question
+
+Is it official structured data?
+Y/n
+
+Y. What type of official data form?
+1. schema.org
+
+n. What type of data?

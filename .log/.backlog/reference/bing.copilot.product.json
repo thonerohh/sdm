@@ -1,0 +1,22 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "offers": [
+      {
+          "@type": "Offer",
+          "name": "Default Title",
+          "availability": "http://schema.org/InStock",
+          "price": 266.0,
+          "priceCurrency": "USD",
+          "priceValidUntil": "2024-03-31",
+          "url": "/products/3-step-brightening-system?variant=43098868056293"
+      }
+  ],
+  "brand": {
+      "name": "Cyspera"
+  },
+  "name": "3 Step Brightening System",
+  "description": "Scientis, an emerging leader in the science of skin discoloration, announces the launch of Cyspera® Intensive System™, a new three-product system clinically proven to improve hyperpigmentation such as persistent brown patches and dark spots. Sold at dermatologist offices nationwide without a prescription, this novel pigment corrector is the next breakthrough in the fight against stubborn hyperpigmentation. The system includes Cyspera® Intensive™, Cyspera® Neutralize™, and Cyspera® Boost™.",
+  "category": "Hyperpigmentation",
+  "url": "/products/3-step-brightening-system"
+}

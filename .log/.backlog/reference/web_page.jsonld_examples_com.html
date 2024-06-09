@@ -1,0 +1,52 @@
+<script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "A name. I use same as title tag",
+  "url": "http://example.com",
+  "description": "Description. I just use the same description as meta data",
+  "breadcrumb":{
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+  {
+  "@type":"ListItem",
+  "position":"1",
+  "item":{
+  "@type":"WebSite",
+  "@id":"http://example.com",
+  "name":"Home"
+  }
+  },
+  {
+  "@type":"ListItem",
+  "position":"2",
+  "item":{
+  "@type":"WebPage",
+  "@id":"http://example.com/thispage",
+  "name":"Same name from above"
+  }
+  }
+  ]},
+  "mainEntity": {
+  "@type": "Article",
+  "@id": "http://example.com/thispage#ArticleID",
+  "author": "Author Name",
+  "datePublished": "3 September, 2016",
+  "dateModified": "3 September, 2016",
+  "mainEntityOfPage": "http://example.com",
+  "headline": "Headline. H1 of Article",
+  "image": {
+  "@type": "imageObject",
+  "url": "http://example.com/image.png",
+  "height": "500",
+  "width": "300"
+  },
+  "publisher": {
+  "@type": "Organization",
+  "name": "Your Name",
+  "logo": {
+  "@type": "imageObject",
+  "url": "http://example.com/logo.png"
+  }
+  }
+  }
+  }</script>

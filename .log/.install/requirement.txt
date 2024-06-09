@@ -1,0 +1,1 @@
+Finally, the format is intended to be fast to parse, fast to generate, stream-based and document-based processing compatible, and require a very small memory footprint in order to operate. (Introduction. https://github.com/digitalbazaar/pyld)
