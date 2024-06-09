@@ -6,5 +6,13 @@ Y/n
 
 Y. What type of official data form?
 1. schema.org
+2. goodrelations
+3. RDF schema
+4. RDFa schema
+5. OpenGraph Protocol
+6. Friend of a friend
+7. Dublin Core Metadata Initiative
 
 n. What type of data?
+1. I do not know
+2. I do certainly prepared
