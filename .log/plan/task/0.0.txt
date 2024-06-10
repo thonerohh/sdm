@@ -9,9 +9,7 @@ Y/n
 
 Y. Select data onthology
 1. schema.org
-2. goodrelations
-3. OpenGraph Protocol
-4. Friend of a friend
+2. OpenGraph Protocol
 
 Y.1. Select thing type
 1. Organization  
@@ -29,6 +27,7 @@ Y.1.1:14 Enter date of begining
 Y.1.1:15 Enter the end date or this moment
 Y.1.1:9 Enter unique TAX ID.
 Y.1.1:10 Enter unique ISO6523.
+Y.1.1:11 Enter working hours from 0 to 23. Day by day of the week.
 
 Y.1.1. Do You want to add more?
 Y/n
@@ -79,19 +78,77 @@ Y.1.2: Do You have discount?
 Y.1.2: Do You have shipping?
   Y.1.2: Enter shipping in format: Price - Pricable Unit. Separate semicolon
   Y.1.2: Enter shipping in format: Price - Pricable Unit. Enter nothing to end
+Y.1.2: Do You have warranty?
+  Y.1.2: Enter warranty in format: City of production - Number of days. Separate semicolon
+  Y.1.2: Enter warranty in format: City of production - Number of days. Enter nothing to end
 
-Y.2. Select data form
-1. Business
-2. Offer
-
-Y.3 Select metadata form
+Y.2 Select metadata form
 1. Page
 2. Page extended
 3. Page Full
 
-Y.4. Select data class
-1. Agent
-2. Document
+Y.2 A, An or The?
+Y.2 Enter title
+Y.2 Enter description
+Y.2 Enter Localization
+Y.2. Enter image url
+
+Y.2 Do You want to add more?
+Y/n
+
+Y.2.Y. Enter alternative localization
+Y.2.Y. Enter site name
+Y.2.Y. Enter url
+Y.2.Y. Enter video url, if there are
+Y.2.Y. Enter audio url, if there are
+
+Y.2.Y. Enter image secure url
+Y.2.Y. Enter image type
+Y.2.Y. Enter image width
+Y.2.Y. Enter image height
+Y.2.Y. Enter image alt
+
+Y.2 Select type
+1. Website
+2. Music song, album, playlist or radio stream
+3. Video as movie, episode, tv show or a thing
+4. Article
+5. Book
+6. Profile
+
+2.0. Enter Duration
+2.1. Enter Album
+2.2. Enter Album:disc
+2.3. Enter Album:track
+2.4. Enter Musician
+2.5. Enter Release Date
+2.6. Enter Creator
+
+3.0. Enter Video actor
+3.1. Enter Video actor:role
+3.2. Enter Video director
+3.3. Enter Video writer
+3.4. Enter Video duration
+3.5. Enter Video release_date
+3.6. Enter Video tag
+3.7. Enter Video series
+
+4.0. Enter Published time
+4.1. Enter Modified time 
+4.2. Enter Expiration time
+4.3. Enter Author
+4.4. Enter Section
+4.5. Enter Tag
+
+5.0. Enter Author
+5.1. Enter Isbn
+5.2. Enter Release_date
+5.3. Enter Tag
+
+6.0. Enter Name
+6.1. Enter Surname
+6.2. Enter User
+6.3. Enter Gender
 
 n. Do you need instruction on certain forms of data insertion?
 Y/n

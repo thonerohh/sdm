@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "url": "https://www.example.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "WebPage",
+    "name": "Home",
+    "url": "https://www.example.com",
+    "mainEntity": {
+      "@type": "Product",
+      "name": "Example Product",
+      "description": "This is an example product.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Example Brand"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "19.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Example Store",
+          "url": "https://www.example.com"
+        }
+      },
+      "additionalType": "http://purl.org/goodrelations/v1#ProductOrServiceModel",
+      "businessFunction": "http://purl.org/goodrelations/v1#Sell",
+      "eligibleRegion": {
+        "@type": "Place",
+        "name": "USA"
+      },
+      "warranty": {
+        "@type": "WarrantyPromise",
+        "durationOfWarranty": {
+          "@type": "QuantitativeValue",
+          "value": "1",
+          "unitCode": "ANN"
+        }
+      },
+      "gtin13": "1234567890123",
+      "mpn": "EX12345",
+      "sku": "EX12345"
+    }
+  }
+}
