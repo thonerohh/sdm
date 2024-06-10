@@ -9,7 +9,7 @@ prefix
 
 2.3 prefix. the attribute to define the onthology of the existing schema. prefix="[prefix]:[link]", then typeof="[prefix]:[value-of-some-attribute]"
 ov: (OpenVocabulary)
-dc:
+dc: (DublinCore)
 foaf: (FriendOfAFriend)
 schema: (Original Schema Org)
 gr: (GoodRelations)

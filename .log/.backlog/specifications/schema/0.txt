@@ -1,0 +1,11 @@
+Action
+BioChemEntity
+CreativeWork
+Event
+Intangible
+MedicalEntity
+Organization
+Person
+Place
+Product
+Taxon

@@ -7,12 +7,12 @@ Y/n
 Y. Select data onthology
 1. schema.org
 2. goodrelations
-3. RDF schema
-4. RDFa schema
-5. OpenGraph Protocol
-6. Friend of a friend
-7. Dublin Core Metadata Initiative
-#8.rohhs
+3. OpenGraph Protocol
+4. Friend of a friend
+#5. Dublin Core Metadata Initiative
+#6. rohhs
+#7. RDF schema
+#8. RDFa schema
 
 Y.1. Select thing type
 1. Action  
@@ -31,12 +31,12 @@ Y.2. Select data form
 1. Business
 2. Offer
 
-Y.5 Select metadata form
+Y.3 Select metadata form
 1. Page
 2. Page extended
 3. Page Full
 
-Y.6. Select data class
+Y.4. Select data class
 1. Agent
 2. Document
 3. Group
@@ -51,10 +51,11 @@ Y.6. Select data class
 12. PersonalProfileDocument
 13. Project
 
-Y.8.Select data format.
-1. Object: action (characteristic)
-2. Subject: action (characteristic)
-3. Group: action (characteristic)
+# Y.5. Type in data type
+Agent, AgentClass, BibliographicResource, FileFormat, Frequency, Jurisdiction, LicenseDocument, LinguisticSystem, Location, LocationPeriodOrJurisdiction, MediaType, MediaTypeOrExtent, MethodOfAccrual, MethodOfInstruction, PeriodOfTime, PhysicalMedium, PhysicalResource, Policy, ProvenanceStatement, RightsStatement, SizeOrDuration, Standard
+
+# Y.6. Type in data format.
+Object, Subject or Group
 
 n. Do you need instruction on certain forms of data insertion?
 Y/n
