@@ -152,3 +152,12 @@ Y.2 Select type
 
 n. Do you need instruction on certain forms of data insertion?
 Y/n
+
+n.Y. You can read manual https://rohhs.com/instruct or there. By entering some
+
+General formating principles is array spliting with comma and array in array with semicolon. If You want to make a key for a value separate them with hyphen. And finally if there are any comments to context use round brackets. Synonyms is separating with colon and if there are need to make tabular data, use periods versus line break.
+
+n.Y. Select data form.
+1. Tabular rows, columns as grids.
+2. List data, a lot of rows
+#3. Ransom data type
