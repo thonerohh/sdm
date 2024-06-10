@@ -13,22 +13,12 @@ Y. What type of official data form?
 6. Friend of a friend
 7. Dublin Core Metadata Initiative
 
-n. What type of data?
-1. I do not know
-2. I do certainly prepared
+Y.1.What type of insertionable data?
+1.Organization
+2.Person
+3.Thing
+4.Group
+5.Other
 
-n.2.How was You certainly prepared?
-1. Unstructured Visualisation
-2. Sentence based Visualisation
-3. Sequence based visualisation
-
-n.2.1.What is most common to describe a data?
-1. Commas and periods
-2. Title and paragraphs
-3. Prescription and postcription
-
-n.2.2.Insert data in form of sentences separated with commas; Example for definitive datasets: Key — value. Key — value, value, value; Example for standard CSV analogue: key,key,key,key,key. value,value,value,value,value.; Example of JSON like data not sure: Key - value.. ..key - value, value, value.
-1. I understand
-2. I am not sure
-
-n.2.3.Insert data in form of sequences formely abbreviations; Example of ..later
+n. Do you need instruction on certain forms of data insertion?
+Y/n
