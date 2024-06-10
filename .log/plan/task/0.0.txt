@@ -14,16 +14,27 @@ Y. Select data onthology
 7. Dublin Core Metadata Initiative
 #8.rohhs
 
-Y.1.Select data form
-1.Organization
-2.Person
-3.Thing
-4.Group
-5.Other
+Y.1. Select thing type
+1. Action  
+2. BioChemEntity  
+3. CreativeWork  
+4. Event  
+5. Intangible  
+6. MedicalEntity  
+7. Organization  
+8. Person  
+9. Place  
+10. Product  
+11. Taxon
 
-Y.2.Select data form
-1.Business
-2.Offer
+Y.2. Select data form
+1. Business
+2. Offer
+
+Y.5 Select metadata form
+1. Page
+2. Page extended
+3. Page Full
 
 Y.6. Select data class
 1. Agent
