@@ -4,7 +4,7 @@ Response the list of previous answers before every new question
 Is it official structured data?
 Y/n
 
-Y. What type of official data form?
+Y. Select data onthology
 1. schema.org
 2. goodrelations
 3. RDF schema
@@ -12,13 +12,38 @@ Y. What type of official data form?
 5. OpenGraph Protocol
 6. Friend of a friend
 7. Dublin Core Metadata Initiative
+#8.rohhs
 
-Y.1.What type of insertionable data?
+Y.1.Select data form
 1.Organization
 2.Person
 3.Thing
 4.Group
 5.Other
+
+Y.2.Select data form
+1.Business
+2.Offer
+
+Y.6. Select data class
+1. Agent
+2. Document
+3. Group
+4. Image
+5. LabelProperty
+6. OnlineAccount
+7. OnlineChatAccount
+8. OnlineEcommerceAccount
+9. OnlineGamingAccount
+10. Organization
+11. Person
+12. PersonalProfileDocument
+13. Project
+
+Y.8.Select data format.
+1. Object: action (characteristic)
+2. Subject: action (characteristic)
+3. Group: action (characteristic)
 
 n. Do you need instruction on certain forms of data insertion?
 Y/n

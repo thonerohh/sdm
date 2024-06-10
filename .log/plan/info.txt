@@ -1,0 +1,15 @@
+source: https://www.w3.org/TR/rdfa-lite/
+
+RDFa 2. The attributes
+vocab
+typeof
+property
+resource
+prefix
+
+2.3 prefix. the attribute to define the onthology of the existing schema. prefix="[prefix]:[link]", then typeof="[prefix]:[value-of-some-attribute]"
+ov: (OpenVocabulary)
+dc:
+foaf: (FriendOfAFriend)
+schema: (Original Schema Org)
+gr: (GoodRelations)
