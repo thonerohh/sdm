@@ -45,8 +45,8 @@ Y.1.1.Y.2 Do you have contact points?
   Y.Y.1.1.Y.2 Enter all contact points in format: contact method - contact type. Separate each contact point with semicolon.
   Y.n.1.1.Y.2 Enter every contact point in format: contact method - contact type. If there are none to add enter nothing
 Y.1.1.Y.3 Do you have organizations?
-  Y.Y.1.1.Y.3 Enter all organizations in format: name of organisation - location of organization. Separate each new organisation with semicolon. 
-  Y.n.1.1.Y.3 Enter every organization in format: name of organisation - location of organization. If there are none to add enter nothing  
+  Y.Y.1.1.Y.3 Enter all organizations in format: name of organization - location of organization. Separate each new organization with semicolon. 
+  Y.n.1.1.Y.3 Enter every organization in format: name of organization - location of organization. If there are none to add enter nothing  
 Y.1.1.Y.4 Do you have copies?
   Y.Y.1.1.Y.4 Enter all internet locations as URL separated with comma
   Y.n.1.1.Y.5 Enter every internet location as URL. If there are none to add enter nothing
@@ -161,3 +161,8 @@ n.Y. Select data form.
 1. Tabular rows, columns as grids.
 2. List data, a lot of rows
 #3. Ransom data type
+
+n.Y.1. Enter data 
+n.Y.2. Enter data 
+n.Y.3. Enter data 
+n.n. Enter data 

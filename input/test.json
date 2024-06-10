@@ -1,0 +1,44 @@
+{  
+  "page": {
+    "@context": "https://schema.org/",
+    "@type": "WebPage",
+    "name": "title",
+    "description": "description",
+    "inLanguage": "Localization",
+    "image": "image url"
+  },
+  "page_extended": {
+    "@context": "https://schema.org/",
+    "@type": "WebPage",
+    "name": "title",
+    "description": "description",
+    "inLanguage": "Localization",
+    "image": "image url",
+    "alternateName": "alternative localization",
+    "url": "url",
+    "siteName": "site name",
+    "video": "video url",
+    "audio": "audio url"
+  },
+  "page_full": {
+    "@context": "https://schema.org/",
+    "@type": "WebPage",
+    "name": "title",
+    "description": "description",
+    "inLanguage": "Localization",
+    "image": "image url",
+    "alternateName": "alternative localization",
+    "url": "url",
+    "siteName": "site name",
+    "video": "video url",
+    "audio": "audio url",
+    "image": {
+      "@type": "ImageObject",
+      "url": "image secure url",
+      "image": "image type",
+      "width": "image width",
+      "height": "image height",
+      "alt": "image alt"
+    }
+  }
+}

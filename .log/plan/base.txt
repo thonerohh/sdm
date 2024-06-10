@@ -1,6 +1,6 @@
 There are should be a plan for generating content in different scenarios:
 
--0. Make a list of questions
++0. Make a list of questions
 
 -1. Make dictionary
 -1.1. Download dictionary of listings schema.org, goodrelations, rdf schema, rdfa, ogp, foaf (friend of a friend), Dublin Core Metadata Initiative (dcmi) 

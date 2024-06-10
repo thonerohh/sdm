@@ -1,0 +1,146 @@
+{
+  "extended_organization": {
+    "@context": "https://schema.org/",
+    "@type": "Organization",
+    "name": "Country, City, PostalCode, Street, House",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Country",
+      "addressLocality": "City",
+      "postalCode": "PostalCode",
+      "streetAddress": "Street, House"
+    },
+    "email": "email",
+    "faxNumber": "fax",
+    "telephone": "telephone",
+    "url": "url",
+    "logo": "logo",
+    "taxID": "taxID",
+    "BID": "BID",
+    "iso6523": "iso6523",
+    "openingHours": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "member": [
+      {
+        "@type": "Person",
+        "name": "name"
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "contact type",
+        "telephone": "contact method"
+      }
+    ],
+    "location": [
+      {
+        "@type": "Organization",
+        "name": "name of organization",
+        "location": "location of organization"
+      }
+    ],
+    "sameAs": [
+      "internet locations"
+    ]
+  },
+  "minified_organization":{
+    "@context": "https://schema.org/",
+    "@type": "Organization",
+    "name": "Country, City, PostalCode, Street, House",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Country",
+      "addressLocality": "City",
+      "postalCode": "PostalCode",
+      "streetAddress": "Street, House"
+    },
+    "email": "email",
+    "faxNumber": "fax",
+    "telephone": "telephone",
+    "url": "url",
+    "logo": "logo",
+    "taxID": "taxID",
+    "BID": "BID",
+    "iso6523": "iso6523",
+    "openingHours": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ]
+  },
+  "extended_product": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "title",
+    "productID": "serial number",
+    "image": "image link",
+    "url": "url",
+    "offers": {
+      "@type": "Offer",
+      "name": "name",
+      "price": "price",
+      "priceCurrency": "currency",
+      "description": "description",
+      "color": "color",
+      "size": "size"
+    }
+  },
+  "miinified_product": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "title",
+    "productID": "serial number",
+    "image": "image link",
+    "url": "url"
+  },
+  "extended_offer": {
+    "@context": "https://schema.org/",
+    "@type": "Offer",
+    "name": "text of offer",
+    "price": "coefficient"
+  },
+  "extended_discount": {
+    "@context": "https://schema.org/",
+    "@type": "Offer",
+    "price": "discount",
+    "validThrough": "end date"
+  },
+  "extended_shipping": {
+    "@context": "https://schema.org/",
+    "@type": "Offer",
+    "price": "Price",
+    "priceCurrency": "Pricable Unit"
+  },
+  "extended_warranty": {
+    "@context": "https://schema.org/",
+    "@type": "Offer",
+    "name": "City of production",
+    "price": "Number of days"
+  }
+}
