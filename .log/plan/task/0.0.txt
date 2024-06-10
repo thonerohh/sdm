@@ -4,28 +4,81 @@ Response the list of previous answers before every new question
 Is it official structured data?
 Y/n
 
+Long lines is comfortable for You?
+Y/n
+
 Y. Select data onthology
 1. schema.org
 2. goodrelations
 3. OpenGraph Protocol
 4. Friend of a friend
-#5. Dublin Core Metadata Initiative
-#6. rohhs
-#7. RDF schema
-#8. RDFa schema
 
 Y.1. Select thing type
-1. Action  
-2. BioChemEntity  
-3. CreativeWork  
-4. Event  
-5. Intangible  
-6. MedicalEntity  
-7. Organization  
-8. Person  
-9. Place  
-10. Product  
-11. Taxon
+1. Organization  
+2. Product
+
+Y.1.1:1 Enter Name. In format: Country, City, PostalCode, Street, House. Separate every new name with (;)
+Y.1.1:2 Enter PostalAddress. In format: Country, City, PostalCode, Street, House. Separate every new with (;)
+Y.1.1:3 Enter Email. Separate every new with (;)
+Y.1.1:4 Enter Fax. Separate every new with (;)
+Y.1.1:5 Enter Telephone. Separate every new with (;)
+Y.1.1:6 Enter Url. Separate every new with (;)
+Y.1.1:7 Enter logo as url. Separate every new with (;)
+Y.1.1:8 Enter Your bank card number. Separate every new with (;)
+Y.1.1:14 Enter date of begining
+Y.1.1:15 Enter the end date or this moment
+Y.1.1:9 Enter unique TAX ID.
+Y.1.1:10 Enter unique ISO6523.
+
+Y.1.1. Do You want to add more?
+Y/n
+
+Y.1.1.n. Save as standard?
+Y/n
+
+Y.1.1.n.Y. File is saved as [name].json
+Y.1.1.n.n. File is saved as [name].txt
+
+Y.1.1.Y.1 Do you have members?
+  Y.Y.1.1.Y.1 Enter all member names separated with comma.
+  Y.n.1.1.Y.1 Enter every member name. If there are none to add enter nothing.
+Y.1.1.Y.2 Do you have contact points?
+  Y.Y.1.1.Y.2 Enter all contact points in format: contact method - contact type. Separate each contact point with semicolon.
+  Y.n.1.1.Y.2 Enter every contact point in format: contact method - contact type. If there are none to add enter nothing
+Y.1.1.Y.3 Do you have organizations?
+  Y.Y.1.1.Y.3 Enter all organizations in format: name of organisation - location of organization. Separate each new organisation with semicolon. 
+  Y.n.1.1.Y.3 Enter every organization in format: name of organisation - location of organization. If there are none to add enter nothing  
+Y.1.1.Y.4 Do you have copies?
+  Y.Y.1.1.Y.4 Enter all internet locations as URL separated with comma
+  Y.n.1.1.Y.5 Enter every internet location as URL. If there are none to add enter nothing
+
+Y.1.2: Enter title
+Y.1.2: Enter unique serial number
+Y.1.2: Enter image link
+Y.1.2: Enter url
+
+Y.1.2. Do You want to add more?
+Y/n
+
+Y.1.2: Enter name
+Y.1.2: Enter price
+Y.1.2: Enter currency
+Y.1.2: Enter description
+Y.1.2: Enter color
+Y.1.2: Enter size
+
+Y.1.2. Do You want to add more?
+Y/n
+
+Y.1.2: Do You have special offers?
+  Y.1.2: Enter every offer in format: text of offer - coefficient. Separate semicolon.
+  Y.1.2: Enter every offer in format: text of offer - coefficient. Enter nothing to end.
+Y.1.2: Do You have discount?
+  Y.1.2: Enter discount in format: % - end date. Separate semicolon
+  Y.1.2: Enter discount in format: % - end date. Enter nothing to end
+Y.1.2: Do You have shipping?
+  Y.1.2: Enter shipping in format: Price - Pricable Unit. Separate semicolon
+  Y.1.2: Enter shipping in format: Price - Pricable Unit. Enter nothing to end
 
 Y.2. Select data form
 1. Business
@@ -39,23 +92,6 @@ Y.3 Select metadata form
 Y.4. Select data class
 1. Agent
 2. Document
-3. Group
-4. Image
-5. LabelProperty
-6. OnlineAccount
-7. OnlineChatAccount
-8. OnlineEcommerceAccount
-9. OnlineGamingAccount
-10. Organization
-11. Person
-12. PersonalProfileDocument
-13. Project
-
-# Y.5. Type in data type
-Agent, AgentClass, BibliographicResource, FileFormat, Frequency, Jurisdiction, LicenseDocument, LinguisticSystem, Location, LocationPeriodOrJurisdiction, MediaType, MediaTypeOrExtent, MethodOfAccrual, MethodOfInstruction, PeriodOfTime, PhysicalMedium, PhysicalResource, Policy, ProvenanceStatement, RightsStatement, SizeOrDuration, Standard
-
-# Y.6. Type in data format.
-Object, Subject or Group
 
 n. Do you need instruction on certain forms of data insertion?
 Y/n

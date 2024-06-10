@@ -13,3 +13,7 @@ dc: (DublinCore)
 foaf: (FriendOfAFriend)
 schema: (Original Schema Org)
 gr: (GoodRelations)
+
+Source: https://rohhs.com/
+
+001. If there are several identic keys, they are saving itself uniquely every new line.
