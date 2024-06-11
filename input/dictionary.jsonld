@@ -16,7 +16,7 @@
     "url": "url",
     "logo": "logo",
     "taxID": "taxID",
-    "BID": "BID",
+    "BaID": "BaID",
     "iso6523": "iso6523",
     "openingHours": [
       {
@@ -75,7 +75,7 @@
     "url": "url",
     "logo": "logo",
     "taxID": "taxID",
-    "BID": "BID",
+    "BaID": "BaID",
     "iso6523": "iso6523",
     "openingHours": [
       {
@@ -123,12 +123,13 @@
     "@context": "https://schema.org/",
     "@type": "Offer",
     "name": "text of offer",
-    "price": "coefficient"
+    "price": "price * coefficient",
+    "priceCurrency": "Pricable Unit"
   },
   "extended_discount": {
     "@context": "https://schema.org/",
     "@type": "Offer",
-    "price": "discount",
+    "discount": "price / discount",
     "validThrough": "end date"
   },
   "extended_shipping": {
@@ -141,6 +142,13 @@
     "@context": "https://schema.org/",
     "@type": "Offer",
     "name": "City of production",
-    "price": "Number of days"
-  }
+    "warranty": {
+        "@type": "WarrantyPromise",
+        "durationOfWarranty": {
+            "@type": "QuantitativeValue",
+            "value": 1,
+            "unitCode": "ANN"
+        }
+    }
+}
 }

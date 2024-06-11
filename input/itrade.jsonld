@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Organization",
+  "name": "Individual Business Lezhnikov Timofey Igorevich",
+  "address":[
+    {
+      "@type": "PostalAddress",
+      "addressCountry": "Russia",
+      "addressLocality": "Saint-Petersburg",
+      "postalCode": "191023",
+      "streetAddress": "Bank lane, 6"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressCountry": "Russia",
+      "addressLocality": "Chelyabinsk",
+      "postalCode": "454080",
+      "streetAddress": "Lenin avenue, 35"
+    }
+  ],
+  "email": "itradespb@yandex.ru",
+  "faxNumber": "",
+  "telephone": "+7(800) 101-47-34",
+  "url": "https://itrade.spb.ru",
+  "logo": "https://static.tildacdn.com/tild6632-6264-4334-b131-386532656337/_2.svg",
+  "taxID": "741511057518",
+  "BaID": "",
+  "iso6523": "",
+  "openingHours": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "11:00",
+      "closes": "22:00"
+    }
+  ],
+  "member": [
+    {
+      "@type": "Person",
+      "name": "Lezhnikov Timofey Igorevich"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+7(800) 101-47-34"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+7 (967) 235-81-55"
+    }
+  ],
+  "location": [
+    {
+      "@type": "Organization",
+      "name": "Individual Business Lezhnikov Timofey Igorevich",
+      "location": "Saint-Petersburg, Russia"
+    },
+    {
+      "@type": "Organization",
+      "name": "Individual Business Lezhnikov Timofey Igorevich",
+      "location": "Chelyabinsk, Russia"
+    }
+  ],
+  "sameAs": [
+    "https://market.yandex.ru/business--itrade-spb/77431408?clid=605&utm_source=77431408&_redirectCount=1",
+    "https://vk.com/itradespb",
+    "https://t.me/itrade_spb"
+  ]
+}
