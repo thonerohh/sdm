@@ -75,10 +75,11 @@ OG_EXTENDED_LIST_PROFILE = {
   'og:profile:username': 'Enter username',
   'og:profile:gender': 'Enter gender'
 }
+
 # cache list
-memcached2_open_graph = []
 path = ''
 output = './output'
+
 # check if output folder exists
 if not os.path.exists(output):
   os.makedirs(output)
@@ -129,36 +130,48 @@ def saving(data):
 def save_and_exit(data):
   status = saving(data)
   if status:
-    print('Data saved to memcached2_open_graph')
+    print(f'Data saved to {location}')
     exit()
   else:
-    print('Data not saved to memcached2_open_graph')
+    print('Data not saved')
     exit()
 
 # function to generate input fields in python with question-text as key from dictionary or if the value is a list then generate a dropdown
 def get_input_from_dict(data, path):
+    # variable cache
     answered = {
       "route": "",
+      "new_data": {}
     }
-    new_data = {}
+
     for key, value in data.items():
+      # loop through data
+
+      # if val is dict state
       if isinstance(value, dict):
         for prompt, options in value.items():
           print(f"{prompt}:")
           for i, option in enumerate(options):
             print(f"{i+1}. {option}")
           choice = int(input("Select an option (number): ")) - 1
-          new_data[key] = options[choice]
+          answered["new_data"][key] = options[choice]
           # add choice to path as str
           answered["route"] += f'{choice}.'
+
+      # if val is str state
       else:
-        new_data[key] = input(f"{value}: ")
+        answered["new_data"][key] = input(f"{value}: ")
         # add input:value to path as boolean if not empty
-        if new_data[key] != '':
+        if answered["new_data"][key] != '':
           answered["route"] += 'y.'
         else:
           answered["route"] += 'n.'
-    return new_data, answered["route"]
+
+      # check the last value and if there are empty remove key as well
+      if answered["new_data"][key] == '':
+        del answered["new_data"][key]
+
+    return answered["new_data"], answered["route"]
 
 # function to check if statement is truthful
 def passing(statement):
@@ -203,18 +216,10 @@ print (nd, a)
 OG_LIST = nd
 OG_CACHE.update(OG_LIST)
 
+print ('answer:', a)
 # set path to result[1]
-path = nameStandard(a[0])
-
-# add OG_LIST to memcached2_open_graph
-memcached2_open_graph.append(OG_LIST)
-# add path to memcached2_open_graph
-memcached2_open_graph.append(path)
-
-print ('question path:', path)
-print('OG_LIST:', OG_LIST)
-
-print('memcached2_open_graph:', memcached2_open_graph)
+path = nameStandard(a)
+print ('answer path:', path)
 
 og_validator = OGValidation()
 
@@ -248,50 +253,33 @@ if input('Do you want to enter extended OpenGraph variables? (y/n): ') == 'y':
   path += f'y.'
   nd, a = get_input_from_dict(OG_EXTENDED_LIST, path)
   OG_CACHE.update(nd)
-  path += nameStandard(a[0])
+  path += nameStandard(a)
+
   # check if og:type is selected and if it is music or whatever than add OG_EXTENDED_LIST_MUSIC or whatever to memcached2_open_graph
   if og_validator.isItType(OG_LIST, 'music'):
     nd, a = get_input_from_dict(OG_EXTENDED_LIST_MUSIC, path)
-    memcached2_open_graph.append(OG_EXTENDED_LIST_MUSIC)
   elif og_validator.isItType(OG_LIST, 'video'):
     nd, a = get_input_from_dict(OG_EXTENDED_LIST_VIDEO, path)
-    memcached2_open_graph.append(OG_EXTENDED_LIST_VIDEO)
   elif og_validator.isItType(OG_LIST, 'article'):
     nd, a = get_input_from_dict(OG_EXTENDED_LIST_ARTICLE, path)
-    memcached2_open_graph.append(OG_EXTENDED_LIST_ARTICLE)
   elif og_validator.isItType(OG_LIST, 'book'):
     nd, a = get_input_from_dict(OG_EXTENDED_LIST_BOOK, path)
-    memcached2_open_graph.append(OG_EXTENDED_LIST_BOOK)
   elif og_validator.isItType(OG_LIST, 'profile'):
     nd, a = get_input_from_dict(OG_EXTENDED_LIST_PROFILE, path)
-    memcached2_open_graph.append(OG_EXTENDED_LIST_PROFILE)
 
   OG_CACHE.update(nd)
-  path += nameStandard(a[0])
+  path += nameStandard(a)
 
-  print ()
-  # concat all dictionaries from memcached2_open_graph to a single dictionary and add string value from memcached2_open_graph[1] to the dictionary with key 'trace'
-  temp = {}
-  for item in memcached2_open_graph:
-    if isinstance(item, dict):
-      # add each item to temp
-      temp.update(item)
-    elif isinstance(item, str):
-      # add item as trace
-      temp['trace'] = item
-
-  OG_LIST = temp
-  print ('OG_LIST:', OG_LIST, 'memcached2_open_graph:', memcached2_open_graph, 'temp:', temp)
-  
-  # replace memcached2_open_graph[0] with OG_LIST
-  memcached2_open_graph = OG_LIST
-
-
+  print ('path: ', path)
   print ('OG_CACHE:', OG_CACHE)
   # save and exit
   filename = '/extended__memcached2_open_graph'
+
+  # add path to OG_CACHE as 'trace'
+  OG_CACHE['trace'] = path
   save_and_exit(OG_CACHE)
 else:
   path += f'n.'
   filename = '/shorten__memcached2_open_graph'
+  OG_CACHE['trace'] = path
   save_and_exit(OG_CACHE)
