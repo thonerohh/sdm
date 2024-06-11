@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 OG_LIST = {
   'og:determiner': {
@@ -75,9 +76,13 @@ OG_EXTENDED_LIST_PROFILE = {
 # cache list
 memcached2_open_graph = []
 path = ''
-output = './output/'
-filename = 'memcached2_open_graph'
-location = [f'{output}/{filename}']
+output = './output'
+# check if output folder exists
+if not os.path.exists(output):
+  os.makedirs(output)
+
+filename = '/memcached2_open_graph'
+location = [f'{output}{filename}']
 extension = ['.json', '.jsonld']
 
 # make a function to formualte the location and extension
@@ -87,6 +92,14 @@ def formulating(location, extension):
     for ext in extension:
       locations.append(loc + ext)
   return locations
+
+# make function to trim all unexpected characters from path and capitalize the strings
+def nameStandard(title):
+  #  using regex remove all symbols with nothing
+  title = re.sub(r'[^\w\s]', '', title)
+  # capitalize all words
+  # title = title.title()
+  return title
 
 # saving function to save data to memcached2_open_graph as
 def saving(data):
@@ -98,7 +111,7 @@ def saving(data):
 
 # function to save and exit
 def save_and_exit(data):
-  status = saving(data, location)
+  status = saving(data)
   if status:
     print('Data saved to memcached2_open_graph')
     exit()
@@ -110,8 +123,6 @@ def save_and_exit(data):
 def get_input_from_dict(data, path):
     answered = {
       "route": "",
-      "image": False,
-      "type": ""
     }
     new_data = {}
     for key, value in data.items():
@@ -121,16 +132,16 @@ def get_input_from_dict(data, path):
           for i, option in enumerate(options):
             print(f"{i+1}. {option}")
           choice = int(input("Select an option (number): ")) - 1
-          new_data[prompt] = options[choice]
+          new_data[key] = options[choice]
           # add choice to path as str
-          answered["route"] += options[choice] + '/'
+          answered["route"] += f'{choice}.'
       else:
         new_data[key] = input(f"{value}: ")
-        # add input:value to path as str
-        answered["route"] += data[key] + '/'
-        # add image: True if og:image was inputed
-        if key == 'og:image':
-          answered["image"] = True
+        # add input:value to path as boolean if not empty
+        if new_data[key] != '':
+          answered["route"] += 'y.'
+        else:
+          answered["route"] += 'n.'
     return new_data, answered
 
 # function to check if statement is truthful
@@ -143,76 +154,99 @@ def passing(statement):
   if typeOf == str and statement != '':
     return True
   # if typeof number and statement is at least 100%
-  if typeOf == int and statement >= 1:
+  if typeOf == int and statement != 0:
     return True
 
 # make a class to validate certain OpenGraph lists
 class OGValidation:
-  def isItInserted(self, og_list):
-    for key in og_list:
-      if not passing(og_list[key]):
-        return False
-    return True
-  # function to check if og:image is inserted
-  def isItImage(self, og_list):
-    if not passing(og_list['og:image']):
-      return False
-    return True
-  # function to check if og:type is selected as music
-  def isItMusic(self, og_list):
-    if og_list['og:type'] == 'music':
-      return True
-    return False
-  # function to check if og:type is selected as video
-  def isItVideo(self, og_list):
-    if og_list['og:type'] == 'video':
-      return True
-    return False
-  # function to check if og:type is selected as article
-  def isItArticle(self, og_list):
-    if og_list['og:type'] == 'article':
-      return True
-    return False
-  # function to check if og:type is selected as book
-  def isItBook(self, og_list):
-    if og_list['og:type'] == 'book':
-      return True
-    return False
-  # function to check if og:type is selected as profile
-  def isItProfile(self, og_list):
-    if og_list['og:type'] == 'profile':
-      return True
-    return False
+    def __init__(self):
+        self.required_fields = ['og:image', 'og:type']
+
+    def passing(self, value):
+        return value is not None and value != ''
+
+    def isItInserted(self, og_list):
+        for key in self.required_fields:
+            print(key)
+            if key not in og_list or not self.passing(og_list[key]):
+                print(key)
+                return False
+        return True
+
+    def isItImage(self, og_list):
+        return 'og:image' in og_list and self.passing(og_list['og:image'])
+
+    def isItType(self, og_list, og_type):
+        return 'og:type' in og_list and og_list['og:type'] == og_type
   
 result = get_input_from_dict(OG_LIST, path)
 # set OG_LIST to result[0]
 OG_LIST = result[0]
 # set path to result[1]
-path = result[1]['route']
+path = nameStandard(result[1]['route'])
 
 # add OG_LIST to memcached2_open_graph
 memcached2_open_graph.append(OG_LIST)
-if not OGValidation().isItInserted(OG_LIST):
-  print('Please fill out all required fields')
-  exit()
-else:
-  print('All required fields filled out')
+# add path to memcached2_open_graph
+memcached2_open_graph.append(path)
 
-if not OGValidation().isItImage(OG_LIST):
-  print('Please insert og:image')
-  exit()
-else:
-  print('og:image inserted')
+print ('question path:', path)
+print('OG_LIST:', OG_LIST)
 
-if OGValidation().isItMusic(OG_LIST):
-  print('og:type is music')
-elif OGValidation().isItVideo(OG_LIST):
-  print('og:type is video')
-elif OGValidation().isItArticle(OG_LIST):
-  print('og:type is article')
-elif OGValidation().isItBook(OG_LIST):
-  print('og:type is book')
-elif OGValidation().isItProfile(OG_LIST):
-  print('og:type is profile')
+print('memcached2_open_graph:', memcached2_open_graph)
+
+og_validator = OGValidation()
+
+if not og_validator.isItInserted(OG_LIST):
+    print('Please fill out all required fields')
+    exit()
 else:
-  print('og:type is website')
+    print('All required fields filled out')
+
+if not og_validator.isItImage(OG_LIST):
+    print('Please insert og:image')
+    exit()
+else:
+    print('og:image inserted')
+
+if og_validator.isItType(OG_LIST, 'music'):
+    print('og:type is music')
+elif og_validator.isItType(OG_LIST, 'video'):
+    print('og:type is video')
+elif og_validator.isItType(OG_LIST, 'article'):
+    print('og:type is article')
+elif og_validator.isItType(OG_LIST, 'book'):
+    print('og:type is book')
+elif og_validator.isItType(OG_LIST, 'profile'):
+    print('og:type is profile')
+else:
+    print('og:type is website')
+
+# ask user for extended input and if is Yes than add to memcached2_open_graph
+if input('Do you want to enter extended OpenGraph variables? (y/n): ') == 'y':
+  path += f'y.'
+  get_input_from_dict(OG_EXTENDED_LIST)
+  # check if og:type is selected and if it is music or whatever than add OG_EXTENDED_LIST_MUSIC or whatever to memcached2_open_graph
+  if og_validator.isItType(OG_LIST, 'music'):
+    get_input_from_dict(OG_EXTENDED_LIST_MUSIC)
+    memcached2_open_graph.append(OG_EXTENDED_LIST_MUSIC)
+  elif og_validator.isItType(OG_LIST, 'video'):
+    get_input_from_dict(OG_EXTENDED_LIST_VIDEO)
+    memcached2_open_graph.append(OG_EXTENDED_LIST_VIDEO)
+  elif og_validator.isItType(OG_LIST, 'article'):
+    get_input_from_dict(OG_EXTENDED_LIST_ARTICLE)
+    memcached2_open_graph.append(OG_EXTENDED_LIST_ARTICLE)
+  elif og_validator.isItType(OG_LIST, 'book'):
+    get_input_from_dict(OG_EXTENDED_LIST_BOOK)
+    memcached2_open_graph.append(OG_EXTENDED_LIST_BOOK)
+  elif og_validator.isItType(OG_LIST, 'profile'):
+    get_input_from_dict(OG_EXTENDED_LIST_PROFILE)
+    memcached2_open_graph.append(OG_EXTENDED_LIST_PROFILE)
+
+  # save and exit
+  filename = '/extended__memcached2_open_graph'
+  save_and_exit(memcached2_open_graph)
+else:
+  path += f'n.'
+  filename = '/shorten__memcached2_open_graph'
+  save_and_exit(memcached2_open_graph)
