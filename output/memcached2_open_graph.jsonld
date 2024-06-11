@@ -1,12 +1,9 @@
-[
-  {
-    "og:determiner": "the",
-    "og:title": "Rohh Thone",
-    "og:description": "There are developer of darklight",
-    "og:type": "website",
-    "og:url": "https://rohhs.com/",
-    "og:locale": "en_US",
-    "og:image": "https://rohhs.com/logo.svg"
-  },
-  "2yy0y0y"
-]
+{
+  "og:determiner": "the",
+  "og:title": "Rohh Thone",
+  "og:description": "There are developer of darklight",
+  "og:type": "website",
+  "og:url": "https://rohhs.com/",
+  "og:locale": "en_US",
+  "og:image": "https://rohhs.com/logo.svg"
+}

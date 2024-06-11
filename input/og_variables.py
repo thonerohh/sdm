@@ -83,7 +83,7 @@ if not os.path.exists(output):
 
 filename = '/memcached2_open_graph'
 location = [f'{output}{filename}']
-extension = ['.json', '.jsonld']
+extension = ['.json', '.jsonld', '.html']
 
 # make a function to formualte the location and extension
 def formulating(location, extension):
@@ -101,12 +101,26 @@ def nameStandard(title):
   # title = title.title()
   return title
 
+def convert_to_metaTagHtml(data):
+  meta_tags = ''
+  for key, value in data.items():
+    meta_tags += f'<meta property="{key}" content="{value}">\n'
+  return meta_tags
+
 # saving function to save data to memcached2_open_graph as
 def saving(data):
   locations = formulating(location, extension)
+  print (data)
   for loc in locations:
-    with open(loc, 'w', encoding='UTF-8') as file:
-      json.dump(data, file, indent=2)
+    # if extension of location is html
+    if loc.endswith('.html'):
+      data = convert_to_metaTagHtml(data)
+      print(data)
+      with open(loc, 'w', encoding='UTF-8') as file:
+        file.write(data)
+    else:
+      with open(loc, 'w', encoding='UTF-8') as file:
+        json.dump(data, file, indent=2)
   return True
 
 # function to save and exit
@@ -245,8 +259,8 @@ if input('Do you want to enter extended OpenGraph variables? (y/n): ') == 'y':
 
   # save and exit
   filename = '/extended__memcached2_open_graph'
-  save_and_exit(memcached2_open_graph)
+  save_and_exit(memcached2_open_graph[0])
 else:
   path += f'n.'
   filename = '/shorten__memcached2_open_graph'
-  save_and_exit(memcached2_open_graph)
+  save_and_exit(memcached2_open_graph[0])
