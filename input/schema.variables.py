@@ -81,7 +81,15 @@ location = {
   }
 }
 
-
+# Text patterns for Schema
+# constant variable for schema as schema = 'https://schema.org/'
+SCHEMA = {"@context": "https://schema.org/"}
+# constant variable for type as type = '@type'
+TYPE = {"@type": ["WebSite","WebPage","Organization","PostalAddress","ContactPoint","OpeningHoursSpecification","Person","Place","GeoCoordinates","Product","Offer","WarrantyPromise",]}
+# optional variable for schema
+OPTIONAL = {
+    "WebSite": ["name","url","email","faxNumber","telephone","url","logo","taxID","bankAccount","iso6523",{"dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]},"opens","closes","contactType","location","streetAddress","addressLocality","addressRegion","postalCode","addressCountry","sameAs","description","industry","price","value","unitCode","priceCurrency","priceValidUntil","category"]
+}
 # Questions for Schema
 
 def insertor(data):
