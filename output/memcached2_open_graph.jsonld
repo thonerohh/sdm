@@ -1,9 +1,20 @@
 {
   "og:determiner": "the",
-  "og:title": "Rohh Thone",
-  "og:description": "There are developer of darklight",
-  "og:type": "website",
+  "og:title": "Rokhkh Von",
+  "og:description": "Worker, Artist and Junior person",
+  "og:type": "article",
   "og:url": "https://rohhs.com/",
   "og:locale": "en_US",
-  "og:image": "https://rohhs.com/logo.svg"
+  "og:image": "https://rohhs.com/favicon.ico",
+  "og:image:width": "400",
+  "og:image:height": "300",
+  "og:image:alt": "Favicon icon",
+  "og:locale:alternate": "es_LA",
+  "og:site_name": "rohhs",
+  "og:article:published_time": "3:47 11.06.2024 +03:00 UTC",
+  "og:article:modified_time": "3:45 11.06.2024 +03:00 UTC",
+  "og:article:expiration_time": "3:45 11.06.2025 +03:00 UTC",
+  "og:article:author": "https://rohhs.com/",
+  "og:article:section": "Ars",
+  "og:article:tag": "art"
 }

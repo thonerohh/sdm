@@ -2,6 +2,8 @@ import json
 import os
 import re
 
+OG_CACHE = {}
+
 OG_LIST = {
   'og:determiner': {
     'Select determiner': ['a', 'an', 'the', 'auto']
@@ -156,7 +158,7 @@ def get_input_from_dict(data, path):
           answered["route"] += 'y.'
         else:
           answered["route"] += 'n.'
-    return new_data, answered
+    return new_data, answered["route"]
 
 # function to check if statement is truthful
 def passing(statement):
@@ -193,11 +195,16 @@ class OGValidation:
     def isItType(self, og_list, og_type):
         return 'og:type' in og_list and og_list['og:type'] == og_type
   
-result = get_input_from_dict(OG_LIST, path)
+nd,a = get_input_from_dict(OG_LIST, path)
+
+print (nd, a)
+
 # set OG_LIST to result[0]
-OG_LIST = result[0]
+OG_LIST = nd
+OG_CACHE.update(OG_LIST)
+
 # set path to result[1]
-path = nameStandard(result[1]['route'])
+path = nameStandard(a[0])
 
 # add OG_LIST to memcached2_open_graph
 memcached2_open_graph.append(OG_LIST)
@@ -239,28 +246,52 @@ else:
 # ask user for extended input and if is Yes than add to memcached2_open_graph
 if input('Do you want to enter extended OpenGraph variables? (y/n): ') == 'y':
   path += f'y.'
-  get_input_from_dict(OG_EXTENDED_LIST)
+  nd, a = get_input_from_dict(OG_EXTENDED_LIST, path)
+  OG_CACHE.update(nd)
+  path += nameStandard(a[0])
   # check if og:type is selected and if it is music or whatever than add OG_EXTENDED_LIST_MUSIC or whatever to memcached2_open_graph
   if og_validator.isItType(OG_LIST, 'music'):
-    get_input_from_dict(OG_EXTENDED_LIST_MUSIC)
+    nd, a = get_input_from_dict(OG_EXTENDED_LIST_MUSIC, path)
     memcached2_open_graph.append(OG_EXTENDED_LIST_MUSIC)
   elif og_validator.isItType(OG_LIST, 'video'):
-    get_input_from_dict(OG_EXTENDED_LIST_VIDEO)
+    nd, a = get_input_from_dict(OG_EXTENDED_LIST_VIDEO, path)
     memcached2_open_graph.append(OG_EXTENDED_LIST_VIDEO)
   elif og_validator.isItType(OG_LIST, 'article'):
-    get_input_from_dict(OG_EXTENDED_LIST_ARTICLE)
+    nd, a = get_input_from_dict(OG_EXTENDED_LIST_ARTICLE, path)
     memcached2_open_graph.append(OG_EXTENDED_LIST_ARTICLE)
   elif og_validator.isItType(OG_LIST, 'book'):
-    get_input_from_dict(OG_EXTENDED_LIST_BOOK)
+    nd, a = get_input_from_dict(OG_EXTENDED_LIST_BOOK, path)
     memcached2_open_graph.append(OG_EXTENDED_LIST_BOOK)
   elif og_validator.isItType(OG_LIST, 'profile'):
-    get_input_from_dict(OG_EXTENDED_LIST_PROFILE)
+    nd, a = get_input_from_dict(OG_EXTENDED_LIST_PROFILE, path)
     memcached2_open_graph.append(OG_EXTENDED_LIST_PROFILE)
 
+  OG_CACHE.update(nd)
+  path += nameStandard(a[0])
+
+  print ()
+  # concat all dictionaries from memcached2_open_graph to a single dictionary and add string value from memcached2_open_graph[1] to the dictionary with key 'trace'
+  temp = {}
+  for item in memcached2_open_graph:
+    if isinstance(item, dict):
+      # add each item to temp
+      temp.update(item)
+    elif isinstance(item, str):
+      # add item as trace
+      temp['trace'] = item
+
+  OG_LIST = temp
+  print ('OG_LIST:', OG_LIST, 'memcached2_open_graph:', memcached2_open_graph, 'temp:', temp)
+  
+  # replace memcached2_open_graph[0] with OG_LIST
+  memcached2_open_graph = OG_LIST
+
+
+  print ('OG_CACHE:', OG_CACHE)
   # save and exit
   filename = '/extended__memcached2_open_graph'
-  save_and_exit(memcached2_open_graph[0])
+  save_and_exit(OG_CACHE)
 else:
   path += f'n.'
   filename = '/shorten__memcached2_open_graph'
-  save_and_exit(memcached2_open_graph[0])
+  save_and_exit(OG_CACHE)
