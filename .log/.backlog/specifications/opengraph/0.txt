@@ -20,8 +20,6 @@ og:image:alt
 
 https://ogp.me/
 
-
-
 music.song
 music:duration
 music:album
