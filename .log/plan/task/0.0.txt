@@ -90,6 +90,7 @@ Y.2 Select metadata form
 Y.2 A, An or The?
 Y.2 Enter title
 Y.2 Enter description
+Y.2.Y. Enter url
 Y.2 Enter Localization
 Y.2. Enter image url
 
@@ -98,7 +99,6 @@ Y/n
 
 Y.2.Y. Enter alternative localization
 Y.2.Y. Enter site name
-Y.2.Y. Enter url
 Y.2.Y. Enter video url, if there are
 Y.2.Y. Enter audio url, if there are
 
