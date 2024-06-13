@@ -1,5 +1,5 @@
-### Pre-release of alpha demo version of demo project for demo purposes 0.0.1
-## This is demo minimized structure data generator. 
+### Almost regularly 0.0.2
+## This is [əs] [dəm]. 
 # SDM - Structured data, minified
 
 When You forgive the number of redaction it is time to move on
