@@ -1,0 +1,78 @@
+Edit Python script so it will be available to define variables in type of list and add it like a plural pattern that you inserted and in the end You are asked to add another one or not to add.
+
+example of schemas:
+person_schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "",
+    "names": [],
+    "surname": "",
+    "email": "",
+    "telephone": "",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "",
+        "addressRegion": "",
+        "postalCode": "",
+        "addressCountry": ""
+    },
+    "endSleep": ["","00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"],
+    "startSleep": ["","00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"],
+    "products": [product_schema]
+}
+product_schema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "",
+  "description": "",
+  "sku": "",
+  "brand": "",
+  "image": ""
+}
+
+example of code:
+def ask_questions(pattern):
+    for key, value in pattern.items():
+        if key.startswith('@'):
+            continue  # Skip keys that start with '@'
+        if isinstance(value, dict):
+            print(f"Please provide details for {key}:")
+            pattern[key] = ask_questions(value)
+        elif isinstance(value, list):
+            # WRITE HERE. if value is not empty, contains only one item and this item is a existed in code variable
+            
+            # check if the list is not empty
+            if len(value) > 0:
+                
+                # make a list of options
+                print(f"Please select a {key} from the following options:")
+                for i, option in enumerate(pattern[key], 1):
+                    print(f"{i}. {option}")
+                # make a choice
+                choice = int(input("Select an option (number): ")) - 1
+                # check if pattern[choice] is not empty
+                if pattern[key][choice] != "":
+                    pattern[key] = value[choice]
+                else:
+                    # if empty, ask for input
+                    pattern[key] = input(f"Please provide {key}: ").strip()
+                    
+            #  if list is empty ask until no answer
+            else:
+                print(f"Please provide values for {key}. Press Enter without typing anything to stop.")
+                values = []
+                while True:
+                    item = input(f"Add a value to {key}: ").strip()
+                    if item:
+                        values.append(item)
+                    else:
+                        pattern[key] = values
+                        break
+        else:
+            if value:
+                print(f"Please provide {key} (or press Enter to keep the default value '{value}'): ")
+                pattern[key] = input(f"{key}: ").strip() or value
+            else:
+                pattern[key] = input(f"Please provide {key}: ").strip()
+    return pattern

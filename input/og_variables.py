@@ -84,7 +84,7 @@ output = './output'
 if not os.path.exists(output):
   os.makedirs(output)
 
-filename = '/memcached2_open_graph'
+filename = '/rohhs_og_varibles'
 location = [f'{output}{filename}']
 extension = ['.json', '.jsonld', '.html']
 

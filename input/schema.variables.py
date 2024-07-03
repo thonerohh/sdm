@@ -8,128 +8,173 @@ CACHED = {}
 
 # Variable Dictionary for Schema
 BASIC = {
+  "GROUP": {
+    "@context": {
+      "sc": "https://schema.org"
+    },
+  },
+  "SUBJECT": {
+    "@type":{
+      # Representation
+      "ws":"WebSite", #WebSystem
+      "wp":"WebPage",
+      "ap":"AboutPage",
+      "conp":"ContactPage",
+      "qap":"QAPage",
+      # Rerepresentation
+      "ls":"BreadcrumbList",
+      ## Confusing objects
+      "ao":"AudioObject",
+      "io":"ImageObject",
+      "vo":"VideoObject",
+      # Independent Object
+      "ps":"Person",
+      "pr":"Product",
+      "sr":"Service",
+      "or":"Organization",
+      "locb":"LocalBusiness",
+      "event":"Event",
+      ## Subjective independent object
+      "irl":"IndividualRole",
+      "pgr":"ProductGroup",
+      ## Specific
+      "gor":"GovernmentalOrganization",
+      "ngo":"NGO",
+      "cor":"Corporation",
+      "er":"EmployeeRole",
+      "rest":"Restaurant",
+      "land":"Landform",
+      # Dependent Object
+      "rew":"Review",
+      ## Creative object
+      "creow":"CreativeWork",
+      "book":"Book",
+      "movie":"Movie",
+      "music":"MusicRecording",
+      "recip":"Recipe",
+      "tv":"TVSeries",
+      # Object Specification
+      "arai":"AggregateRating",
+      "aoe":"AggregateOffer",
+      "rai":"Rating",
+      "wan":"WarrantyPromise",
+      # Formal Action
+      "conp":"ContactPoint",
+      ## Action Specification
+      "oe":"Offer",
+      "ohs":"OpeningHoursSpecification",
+      "gc":"GeoCoordinates",
+      "ic":"InteractionCounter",
+      # Property
+      "pl":"Place",
+      "pla":"PostalAddress",
+    }
+  },
   "OBJECT": {},
-  "SUBJECT": {},
-  "GROUP": {},
-  "STATUS": ''
+  "STATE": '' #cache
 }
 
-# Patterns for Schema
-organization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
+# Minimized type version
+MTYPE = {
+"Product":[
 
-  "name": "",
-  "address": "",
-  "email": "",
-  "faxNumber": "",
-  "telephone": "",
-  "url": "",
-  "logo": "",
-  "taxID": "",
-  "BankAccount": "",
-  "iso6523": "",
-  "type": "",
-  "industry": "",
-  "size": "",
-  "location": "",
-  "website": "",
-  "description": "",
-  "sameAs": ""
-}
-address = {
-  "@type": "PostalAddress",
-  "streetAddress": "",
-  "addressLocality": "",
-  "addressRegion": "",
-  "postalCode": "",
-  "addressCountry": ""
-}
-contact = {
-  "@type": "ContactPoint",
-  "contactType": "",
-  "telephone": "",
-  "email": ""
-}
-openingHours = {
-  "@type": "OpeningHoursSpecification",
-  "dayOfWeek": "",
-  "opens": "",
-  "closes": ""
-}
-members = {
-  "@type": "Organization",
-  "name": "",
-  "url": "",
-  "description": ""
-}
-employees = {
-  "@type": "Person",
-  "name": "",
-  "jobTitle": "",
-  "telephone": "",
-  "email": ""
-}
-location = {
-  "@type": "Place",
-  "name": "",
-  "address": "",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "",
-    "longitude": ""
+],
+"Organization":{
+  "@type":["Organization"],
+  "name":"Enter the name of organization",
+  "description":"Enter the description of organization",
+  "address":{
+    "@type": ["PostalAddress"],
+    "addressCountry": "Enter the country name",
+    "addressRegion": "Enter the region",
+    "addressLocality": "Enter the city",
+    "postalCode": "Enter the postal code",
+    "streetAddress": "Enter full street address including postal code number",
+  },
+  "email": "email",
+  "faxNumber": "Enter the fax",
+  "telephone": "Enter the telephone",
+  "url": "Enter the url of organization",
+  "logo": "Enter the url of logo",
+  "taxID": "Enter the tax ID",
+  "BaID": "Enter the Bank ID",
+  "iso6523": "Enter the iso6523 code of organization",
+  "openningHours":[
+    {
+      "@type":["OpeningHoursSpecification"],
+      "dayOfWeek":[
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens":["00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"],
+      "closes":["00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"],
+    }
+  ],
+  "member": [
+    {
+      "@type": ["Person"],
+      "name": "Enter the name of person"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": ["ContactPoint"],
+      "contactType": ["customer service", "technical support", "billing support", "bill payment", "sales", "reservations", "credit card support", "emergency", "baggage tracking", "roadside assistance", "package tracking", "flight information", "24/7 customer service", "24/7 technical support", "24/7 billing support", "24/7 bill payment", "24/7 sales", "24/7 reservations", "24/7 credit card support", "24/7 emergency", "24/7 baggage tracking", "24/7 roadside assistance", "24/7 package tracking", "24/7 flight information", ""],
+      "telephone": "Enter telephone"
+    },
+    "sameAs":["*"]
+  ],
+},
+"LocalBusiness":{
+  "@type":["localBusiness"],
+  "name":"Enter the name of local business",
+  "description":"Enter the description of local business",
+  "currenciesAccepted":["", "USD", "RUR"],
+  "paymentAccepted":["","Cash","Credit Card","Cash and credit card"],
+  "image":"Enter URL of an image",
+  "url":"Enter URL of an organization",
+  "address":{
+    "@type": ["PostalAddress"],
+    "addressCountry": "Enter the country name",
+    "addressRegion": "Enter the region",
+    "addressLocality": "Enter the city",
+    "postalCode": "Enter the postal code",
+    "streetAddress": "Enter full street address including postal code number",
+  },
+  "priceRange":["$","$$","$$$"],
+  "sameAs":["*"]
+},
+"warranty":{
+  "@type":["WarrantyPromise"],
+  "name":"Enter the name of warranty",
+  "durationOfWarranty":{
+    "@type":["QuantitativeValue"],
+    "unitCode":["ANN"],
+    "value":"Enter the number of warrantied years from 1 to 99"
   }
+},
+"offers":{
+  "@type": ["Offer"],
+  "name":"Type name of product",
+  "availability":["https://schema.org/InStock","https://schema.org/OutOfStock","https://schema.org/PreOrder","https://schema.org/BackOrder","https://schema.org/InStoreOnly","https://schema.org/OnlineOnly"],
+  "price":"Enter the price",
+  "priceCurrent":["", "USD", "RUR"],
+  "priceValidUntil":"Enter time format Year Month Day (no validation)",
+  "url":"Enter the url of the offer"
+},
 }
+#if array it is selectable options. if array contains empty value, it is entry point "Enter Your value". If tupple have only one option it is preselected. If value in tupple is equal to asterisk, then insert as much as possible values, and if there are none to add enter nothing to end up an array
+context = {"@context":"https://schema.org/"}
+context_type = MTYPE
+variable = MTYPE[0].key
+question_context = f'''Do you have an {variable}'''
 
-# Text patterns for Schema
-# constant variable for schema as schema = 'https://schema.org/'
-SCHEMA = {"@context": "https://schema.org/"}
-# constant variable for type as type = '@type'
-TYPE = {"@type": ["WebSite","WebPage","Organization","PostalAddress","ContactPoint","OpeningHoursSpecification","Person","Place","GeoCoordinates","Product","Offer","BreadcrumbList", "ListItem","imageObject","Review","Article","Rating","AggregateRating","InteractionCounter","Restaurant","LocalBusiness", "Service","WarrantyPromise","QuantitativeValue"]}
-SUPTYPE = {
-  "WebSite": ["WebPage", "Organization", "Person"],
-  "Person": ["Service", "Product", "GeoCoordinates"],
-  "Product": ["Offer", "sameAs"],
-  "Service": ["Offer", "sameAs", "author"],
-  "Offer": ["price","priceCurrency", "priceValue","itemCondition","availability","AggregateRating", "Review", "WarrantyPromise"],
-  "Organization": ["Product", "PostalAddress", "ContactPoint", "OpeningHoursSpecification", "Person", "Place", "LocalBusiness"],
-  "LocalBusiness": ["Product", "Service", "PostalAddress", "GeoCoordinates"],
-  "Place": ["GeoCoordinates"],
-  # segments for schema
-  "location": ["address", "geo"],
-  "address": ["name", "address", "geo"],
-  "geo": ["latitude", "longitude"],
-  "GeoCoordinates": ["latitude", "longitude"],
-  "PostalAddress": ["streetAddress", "addressLocality", "addressRegion", "postalCode", "addressCountry"],
-  "ContactPoint": ["contactType", "telephone", "email"],
-  "OpeningHoursSpecification": ["dayOfWeek", "opens", "closes"],
-  "author": ["name", "jobTitle", "telephone", "email"],
-  "sameAs": ["url"],
-  "priceValue": "", # How long You can live with those money? ex. 6D
-  "name": "",
-  "description": "",
-  "url": "",
-  "logo": "",
-  "taxID": "",
-  "BankAccount": "",
-  "iso6523": "",
-  "type": "",
-
-}
-# optional variable for schema
-OPTIONAL = {
-    "WebSite": ["name","url","email","faxNumber","telephone","url","logo","taxID","bankAccount","iso6523",{"dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]},"opens","closes","contactType","location","streetAddress","addressLocality","addressRegion","postalCode","addressCountry","sameAs","description","industry","price","value","unitCode","priceCurrency","priceValue""priceValidUntil","category", "@id", "position","itemListElement","author","datePublished","dateModified", "image","height", "width","mainEntityOfPage","ratingValue","bestRating","aggregateRating","review","reviewCount",{"interactionType":["http://schema.org/CommentAction","http://schema.org/ReplyAction","http://schema.org/LikeAction","http://schema.org/DislikeAction","http://schema.org/FollowAction","http://schema.org/JoinAction","http://schema.org/LeaveAction","http://schema.org/InviteAction","http://schema.org/SubscribeAction","http://schema.org/UnRegisterAction","http://schema.org/ListenAction","http://schema.org/ViewAction","http://schema.org/ReadAction","http://schema.org/BookmarkAction","http://schema.org/ShareAction","http://schema.org/DonateAction","http://schema.org/DownloadAction","http://schema.org/ReviewAction","http://schema.org/WatchAction","https://schema.org/TradeAction"]},"interactionStatistic","userInteractionCount","openingHours","priceRange","servesCuisine","category",{"availability":["https://schema.org/InStock","https://schema.org/OutOfStock","https://schema.org/PreOrder","https://schema.org/BackOrder","https://schema.org/InStoreOnly","https://schema.org/OnlineOnly"]},"sku","paymentAccepted","currenciesAccepted","latitude","longitude"]
-}
-OPTIONS = {
-"opens": ["00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"],
-"closes": ["00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"],
-"dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-"contactType": ["customer service", "technical support", "billing support", "bill payment", "sales", "reservations", "credit card support", "emergency", "baggage tracking", "roadside assistance", "package tracking", "flight information", "24/7 customer service", "24/7 technical support", "24/7 billing support", "24/7 bill payment", "24/7 sales", "24/7 reservations", "24/7 credit card support", "24/7 emergency", "24/7 baggage tracking", "24/7 roadside assistance", "24/7 package tracking", "24/7 flight information", ""],
-"industry": ["", "Agriculture", "Automotive", "Construction", "Education", "Finance", "Health", "Hospitality", "IT", "Manufacturing", "Media", "Real Estate", "Retail", "Transportation", "Utilities"],
-"size": ["1-10", "11-50", "51-200", "201-500", "501-1000", "1001-5000", "5001-10000", "10001+"],
-}
 # Questions for Schema
-
 def insertor(data):
     # variable cache
     answered = {
