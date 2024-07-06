@@ -1,0 +1,15 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "price": "100000000",
+    "priceCurrency": "BTC",
+    "url": "https://itradestore.ru/",
+    "warranty": [
+        {
+            "@context": "https://schema.org",
+            "@type": "WarrantyPromise",
+            "durationOfWarranty": "10000"
+        }
+    ]
+}

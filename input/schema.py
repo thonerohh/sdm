@@ -216,7 +216,7 @@ def ask_questions(pattern):
 
     return pattern
 
-def main(output_dir, output_filename = None):
+def main(output_dir, output_filename):
     
     print("You will be asked to select schema type.")
     print("Please select from the following options:")
@@ -275,4 +275,5 @@ if __name__ == "__main__":
         output_filename = args.output_filename
     else:
         output_filename = "default.jsonld"
+
     main(output_dir, output_filename)

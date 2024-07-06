@@ -5,10 +5,12 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 # Get the absolute path of the schema.py file
 schema_path = os.path.abspath("input/schema.py")
 og_path = os.path.abspath("input/og.py")
+optional_path = os.path.abspath("input/optional.py")
 
 actions = {
     "schema": schema_path,
-    "og": og_path
+    "og": og_path,
+    "optional": optional_path
 }
 
 def main():
@@ -32,6 +34,9 @@ def main():
     elif choice == 1:
         # run og.py
         os.system(f"python {actions['og']} --output_directory {output_directory} --output_filename {output_filename}")
+    elif choice == 2:
+        # run optional.py
+        os.system(f"python {actions['optional']} --output_directory {output_directory} --output_filename {output_filename}")
 
 if __name__ == "__main__":
     main()
