@@ -1,0 +1,171 @@
+{
+    "rohhs": [
+        {
+            "type": "person",
+            "types": [
+                "person",
+                "individual",
+                "designer",
+                "developer",
+                "junior marketer",
+                "manager",
+                "artist",
+                "researcher"
+            ],
+            "name": "Rohh",
+            "names": {
+                "surname": "Thone",
+                "alt": "Kostya",
+                "alts": [
+                    "Konstantin",
+                    "Kudra",
+                    "Kudr",
+                    "Kest"
+                ],
+                "legal": "Rokhkh",
+                "short": "R",
+                "russian": "\u0420\u043e\u0445\u0445",
+                "english": "Rohh",
+                "chineese": "\u7f57\u8d6b"
+            },
+            "date": "31-08-2000-15",
+            "script": "I am 23 years old. Believe in Yourself!",
+            "scripts": [
+                "Planned. Trying not to be dead",
+                "I am 22 years old. 1 life 2 love",
+                "I am 21 years old. Human from Earth",
+                "I am 20 years old. (do not remember)",
+                "I am 19 years old. Per aspera et perpetus doctrina ad astra",
+                "I am 18 years old. Per aspera ad astra",
+                "I am 17 years old. Stupid as f*ck. Almost was kicked out of school",
+                "I am 16 years old. Stupid as f*ck. Almost dead of drug overdose",
+                "I am 15 years old. Stupid as f*ck. Almost dead of tequila overdose",
+                "I am 14 years old. First love. Closely to be kicked out of school",
+                "I am 13 years old. First party",
+                "I am 12 years old. Same as all",
+                "I am 11 years old. Same as all. Math olympiad nerd",
+                "I am 10 years old. Same as all",
+                "I am 9 years old. Same as all",
+                "I am 8 years old. Same as all. Imagined kest2551, sold some stickers in school. Closely to be kicked out of school",
+                "I am 7 years old. Same as all",
+                "I am 6 years old. Same as all",
+                "I am 5 years old. Same as all",
+                "I am 4 years old. Do not remember. Got drunk from glass of beer",
+                "I am 3 years old. Do not remember, wanted to be a president",
+                "I am 2 years old. Do not remember",
+                "I am 1 year old. Do not remember",
+                "I am 0 years old. 2000 year",
+                "I am -9 months old. Happyly Growing",
+                "I am ~9 months old. Not planned"
+            ],
+            "address": "Russia",
+            "addresses": {
+                "legal": "\u0420\u043e\u0441\u0441\u0438\u044f, \u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433, \u0421\u0440\u0435\u0434\u043d\u0438\u0439 \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0412.\u041e. 85",
+                "postal": "199106",
+                "actual": "Home",
+                "phone": "89219110831",
+                "email": "contact@rohh.ru",
+                "emails": [
+                    "rohhthone@gmail.com",
+                    "rohhthone@yandex.ru",
+                    "rohhthone@hotmail.com",
+                    "contact@rohh.ru"
+                ]
+            },
+            "link": "https://rohhs.com/",
+            "links": {
+                "site": "https://rohhs.com/",
+                "sites": [
+                    "https://rohhs.com/",
+                    "https://rohh.ru/",
+                    "https://rohhthone.ru/",
+                    "https://rohhthone.com/",
+                    "https://diarium.info/",
+                    "https://diaryson.com/"
+                ],
+                "vkontakte": "https://vk.com/rohhthone",
+                "facebook": "https://facebook.com/rohhthone",
+                "instagram": "https://instagram.com/rohhthone",
+                "instagrams": [
+                    "https://instagram.com/rohhthone",
+                    "https://instagram.com/thonerohh"
+                ],
+                "tiktok": "https://tiktok.com/@rohhthone",
+                "threads": "https://www.threads.net/@rohhthone",
+                "telegram": "t.me/rohhthone",
+                "telegrams": [
+                    "https://t.me/rohhthone",
+                    "https://t.me/thonerohh",
+                    "https://t.me/rohhs"
+                ]
+            },
+            "sign": "R",
+            "signs": {
+                "logo": "https://rohhs.com/there/logo/rohh.svg",
+                "emblem": "https://rohhs.com/there/emblem/rohh.svg",
+                "flag": "https://rohhs.com/there/flag/rohh.svg",
+                "banner": "https://rohhs.com/there/banner/rohh.svg",
+                "avatar": "https://rohhs.com/there/avatar/rohh.svg",
+                "icon": "https://rohhs.com/there/icon/rohh.svg",
+                "favicon": "https://rohhs.com/there/favicon/rohh.ico",
+                "character": "https://rohhs.com/there/character/rohh.svg",
+                "gesture": "https://rohhs.com/there/gesture/rohh.svg"
+            },
+            "id": 1,
+            "ids": {
+                "inn": 780161065231,
+                "international": "77077xxxxx",
+                "russian": "4020803xxx"
+            },
+            ".": "https://rohhs.com/"
+        },
+        {
+            "sameAs": [
+                "https://allteachers.ru/",
+                "https://psypolyclinic.ru/",
+                "https://goodbadges.ru/",
+                "https://applepremshop.ru/",
+                "https://akpp-dsgmaster.ru/",
+                "https://cybersecurity.com.ru/",
+                "https://maxnikitin.com/",
+                "https://bettertherapy.ru/",
+                "https://fairpark.ru/",
+                "https://barbershop-time.ru/",
+                "https://stich.agency/",
+                "https://pitch.unyconn.com/",
+                "https://baikal-excursion.ru/",
+                "https://recycling-system.ru/",
+                "https://tommycat.ru/",
+                "https://sila-okon.ru/",
+                "https://buildtogether.ru/",
+                "https://finans-plus.com/",
+                "https://bollo.ru/",
+                "https://x-servis.com/",
+                "https://oracul-center.ru/",
+                "https://liderstroy0053.ru/",
+                "https://santehnik-potapoff.ru/",
+                "https://gawwa.ru/",
+                "https://oracul-center.ru/",
+                "https://man-elektrik.ru/",
+                "https://yurcentrvictoria.ru/",
+                "https://sformat.spb.ru/",
+                "https://kat48.ru/",
+                "https://remokmontazh.ru/",
+                "https://rohh.ru",
+                "https://electront.ru/",
+                "https://icecreamaster.ru/",
+                "https://unyconn.com/",
+                "https://localpath.xyz/",
+                "https://lesotochka.ru/",
+                "https://radiosezon.ru/",
+                "https://azimutelematika.ru/",
+                "https://atlantamed-a.ru/",
+                "https://oknapro.spb.ru/",
+                "https://postavshik-po.ru/",
+                "https://dzen.watch/",
+                "https://cleantome.com/",
+                "https://iggmotors.com/"
+            ]
+        }
+    ]
+}

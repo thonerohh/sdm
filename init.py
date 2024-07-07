@@ -19,8 +19,8 @@ def main():
         print(f"{i}. {action}")
     choice = int(input("Select an option (number): ")) - 1
 
-    output_directory = input("Enter the output directory or enter nothing for default: ")
-    output_filename = input("Enter the output filename or enter nothing for default: ")
+    output_directory = input("Enter the output directory or enter nothing to use default: ")
+    output_filename = input("Enter the output filename or enter nothing to use default: ")
 
     # if entered nothing output in current directory
     if output_directory == '':
