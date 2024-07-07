@@ -6,11 +6,13 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 schema_path = os.path.abspath("input/schema.py")
 og_path = os.path.abspath("input/og.py")
 optional_path = os.path.abspath("input/optional.py")
+pattern_path = os.path.abspath("input/pattern.py")
 
 actions = {
     "schema": schema_path,
     "og": og_path,
-    "optional": optional_path
+    "optional": optional_path,
+    "pattern":
 }
 
 def main():

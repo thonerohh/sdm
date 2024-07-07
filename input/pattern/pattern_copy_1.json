@@ -1,0 +1,36 @@
+{
+    "json": {},
+    "rohhs": [],
+    "undefined": "",
+    "name": "pattern",
+    "version": 0,
+    "object": {
+        "@context": "http://schema.org/",
+        "@type": [
+            "object",
+            "subject",
+            "action"
+        ],
+        "options": ["", "required", "recommended", "optional"],
+        "names": [],
+        "url": "",
+        "description": "",
+        "properties": {
+            "name": {
+                "type": "string",
+                "options": ["", "required", "recommended", "optional"],
+                "description": ""
+            },
+            "version": {
+                "type": "number",
+                "options": ["", "required", "recommended", "optional"],
+                "description": ""
+            },
+            "object": {
+                "type": "object",
+                "options": ["", "required", "recommended", "optional"],
+                "description": ""
+            }
+        }
+    }
+}
