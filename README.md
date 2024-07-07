@@ -1,47 +1,42 @@
-### Almost regularly 0.0.3
+### Almost regularly 0.0.4
 ## This is [əç] [dəɱ]. 
 # SDM - Structured data, minified
+
+
+*This scripts was written with assistances by Copilot, ChatGPT and Gemini, as large language models developed by [GitHub](https://github.com/), [Microsoft](https://microsoft.com), [OpenAI](https://rohhs.com) and [Bard](https://gemini.google.com) in [Google](https://google.com) in [Alphabet.](https://alphabet.com)*
+
+*This scripts was complide with python, windows 11 and something I cannot even remember for now*
+
+---
 
 When You forgive the number of redaction it is time to move on.
 
 Fill inside Your computer Python 3.12, i am using 3.12.3, You can download 3.12.4 from there https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe (If You are using Windows amd64 ofcourse)
 
-Cover with little pip as well ```python install pip```
+Cover with little pip as well 
 
-Lead loveable packages from requirements.txt through pip over python to Your computer. In this project I am using ``` pip install json re argparse```
+`python install pip`
+
+Lead loveable packages from requirements.txt through pip over python to Your computer. In this project I am using 
+
+``` pip install json re argparse requests```
+
 - json
 - re
 - argparse
-and os with sys
+- requests
+- sys
+- os
 
-Hit up ```run.bat``` and follow instructions. Do not select 2.3.4. please.
+cLick ```run``` .b[utt] and follow instructions.
 
-After inserting all data there will be file generated in output presumingly. OG works differently NOT FIXED
-Also You can run it through IDE like VS Code, JetBrains or everything You like
+After inserting all data there will be file generated in output presumingly
+Also You can run it through IDE like VS, VS Code, JetBrains or everything You like
 
-Joke's done.
+We are nothing without:
 
-- I was underestimated brain power and copied code from AI
-- Nothing can be funnier than true fan 120w
+> Leaving house with forgiveness of closed door
 
+> Food-ready forgiveness 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- Noone followed my direction #da#lamma #iwillright#drahmaOSfasterforfaithfulcontentmanagers
+> Jokes about homeless
