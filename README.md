@@ -1,4 +1,4 @@
-### Almost regularly 0.0.4
+v. 0.1.0 sdm
 ## This is [əç] [dəɱ]. 
 # SDM - Structured data, minified
 
