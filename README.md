@@ -1,4 +1,4 @@
-v. 0.1.0 sdm
+v. 0.1.1 sdm
 ## This is [əç] [dəɱ]. 
 # SDM - Structured data, minified
 
@@ -40,3 +40,5 @@ We are nothing without:
 > Food-ready forgiveness 
 
 > Jokes about homeless
+
+Are You seriously SCHEMA ORG??? 4 BREADCRUMBS????? 
