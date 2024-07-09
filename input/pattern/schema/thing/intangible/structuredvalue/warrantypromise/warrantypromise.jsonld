@@ -1,0 +1,20 @@
+{
+    "@context": "https://schema.org/WarrantyPromise",
+    "@type": "WarrantyPromise",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "durationOfWarranty": "QuantitativeValue",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": [],
+    "warranty": "Demand",
+    "warrantyPromise": "BuyAction",
+    "warrantyScope": "WarrantyScope"
+}

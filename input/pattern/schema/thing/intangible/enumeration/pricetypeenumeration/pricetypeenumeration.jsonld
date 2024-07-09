@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/PriceTypeEnumeration",
+    "@type": "PriceTypeEnumeration",
+    "priceType": "CompoundPriceSpecification"
+}

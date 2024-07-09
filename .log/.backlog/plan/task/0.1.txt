@@ -1,2 +1,0 @@
-git fetch and remove files that are not currently exist in this repository, but can be accessed with VersionControl if it is available
-or just remove everything that is not persisted in the current repo

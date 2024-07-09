@@ -1,0 +1,21 @@
+{
+    "@context": "https://schema.org/Brand",
+    "@type": "Brand",
+    "additionalType": [],
+    "aggregateRating": "AggregateRating",
+    "alternateName": "",
+    "brand": "Organization",
+    "description": "",
+    "disambiguatingDescription": "",
+    "identifier": [],
+    "image": [],
+    "logo": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "potentialAction": "Action",
+    "review": "Review",
+    "sameAs": [],
+    "slogan": "",
+    "subjectOf": "CreativeWork",
+    "url": []
+}

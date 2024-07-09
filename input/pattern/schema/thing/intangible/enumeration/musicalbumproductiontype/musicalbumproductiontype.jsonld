@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/MusicAlbumProductionType",
+    "@type": "MusicAlbumProductionType",
+    "albumProductionType": "MusicAlbum"
+}

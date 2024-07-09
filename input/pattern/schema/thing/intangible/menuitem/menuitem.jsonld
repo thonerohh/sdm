@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org/MenuItem",
+    "@type": "MenuItem",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "hasMenuItem": "Menu",
+    "identifier": [],
+    "image": [],
+    "itemOffered": "Demand",
+    "mainEntityOfPage": [],
+    "menuAddOn": {},
+    "name": "",
+    "nutrition": "NutritionInformation",
+    "offers": "Demand",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "suitableForDiet": "RestrictedDiet",
+    "url": []
+}

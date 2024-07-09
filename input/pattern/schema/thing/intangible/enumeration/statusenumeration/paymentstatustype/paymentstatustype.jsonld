@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/PaymentStatusType",
+    "@type": "PaymentStatusType",
+    "paymentStatus": "Invoice"
+}

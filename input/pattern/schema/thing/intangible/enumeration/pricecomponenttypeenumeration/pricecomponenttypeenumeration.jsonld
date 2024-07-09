@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/PriceComponentTypeEnumeration",
+    "@type": "PriceComponentTypeEnumeration",
+    "priceComponentType": "UnitPriceSpecification"
+}

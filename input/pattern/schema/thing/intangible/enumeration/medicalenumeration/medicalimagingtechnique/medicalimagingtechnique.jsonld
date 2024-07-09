@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/MedicalImagingTechnique",
+    "@type": "MedicalImagingTechnique",
+    "imagingTechnique": "ImagingTest"
+}

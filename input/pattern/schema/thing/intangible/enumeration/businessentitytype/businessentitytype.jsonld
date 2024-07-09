@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/BusinessEntityType",
+    "@type": "BusinessEntityType",
+    "eligibleCustomerType": "Demand"
+}

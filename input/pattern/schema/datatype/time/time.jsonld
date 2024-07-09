@@ -1,0 +1,16 @@
+{
+    "@context": "https://schema.org/Time",
+    "@type": "Time",
+    "arrivalTime": "Trip",
+    "availabilityEnds": "ActionAccessSpecification",
+    "availabilityStarts": "ActionAccessSpecification",
+    "checkinTime": "LodgingBusiness",
+    "checkoutTime": "LodgingBusiness",
+    "closes": "OpeningHoursSpecification",
+    "cutoffTime": {},
+    "departureTime": "Trip",
+    "doorTime": "Event",
+    "endTime": "Action",
+    "opens": "OpeningHoursSpecification",
+    "startTime": "Action"
+}

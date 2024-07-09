@@ -1,0 +1,6 @@
+{
+    "@context": "https://schema.org/GenderType",
+    "@type": "GenderType",
+    "gender": "Person",
+    "suggestedGender": "PeopleAudience"
+}

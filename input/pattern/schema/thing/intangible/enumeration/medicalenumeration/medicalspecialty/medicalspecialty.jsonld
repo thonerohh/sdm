@@ -1,0 +1,6 @@
+{
+    "@context": "https://schema.org/MedicalSpecialty",
+    "@type": "MedicalSpecialty",
+    "medicalSpecialty": "Hospital",
+    "relevantSpecialty": "MedicalEntity"
+}

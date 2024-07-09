@@ -1,0 +1,20 @@
+{
+    "@context": "https://schema.org/Class",
+    "@type": "Class",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "domainIncludes": "Property",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "populationType": "StatisticalPopulation",
+    "potentialAction": "Action",
+    "rangeIncludes": "Property",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "supersededBy": {},
+    "url": []
+}

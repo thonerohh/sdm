@@ -1,0 +1,17 @@
+{
+    "@context": "https://schema.org/BodyMeasurementTypeEnumeration",
+    "@type": "BodyMeasurementTypeEnumeration",
+    "BodyMeasurementArm": "",
+    "BodyMeasurementBust": "",
+    "BodyMeasurementChest": "",
+    "BodyMeasurementFoot": "",
+    "BodyMeasurementHand": "",
+    "BodyMeasurementHead": "",
+    "BodyMeasurementHeight": "",
+    "BodyMeasurementHips": "",
+    "BodyMeasurementInsideLeg": "",
+    "BodyMeasurementNeck": "",
+    "BodyMeasurementUnderbust": "",
+    "BodyMeasurementWaist": "",
+    "BodyMeasurementWeight": ""
+}

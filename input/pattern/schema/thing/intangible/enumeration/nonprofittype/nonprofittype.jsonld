@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/NonprofitType",
+    "@type": "NonprofitType",
+    "nonprofitStatus": "Organization"
+}

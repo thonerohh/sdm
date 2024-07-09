@@ -1,0 +1,21 @@
+{
+    "@context": "https://schema.org/HowToItem",
+    "@type": "HowToItem",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "identifier": [],
+    "image": [],
+    "item": "Thing",
+    "mainEntityOfPage": [],
+    "name": "",
+    "nextItem": "ListItem",
+    "position": "",
+    "potentialAction": "Action",
+    "previousItem": "ListItem",
+    "requiredQuantity": 0,
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": []
+}

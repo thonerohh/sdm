@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/EnergyEfficiencyEnumeration",
+    "@type": "EnergyEfficiencyEnumeration",
+    "hasEnergyEfficiencyCategory": "EnergyConsumptionDetails"
+}

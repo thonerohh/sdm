@@ -1,7 +1,0 @@
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "Acme Corporation",
-  "description": "A leading manufacturer of widgets and gadgets.",
-  "url": "https://www.example.com"
-}

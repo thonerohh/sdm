@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/ReturnMethodEnumeration",
+    "@type": "ReturnMethodEnumeration",
+    "returnMethod": "MerchantReturnPolicy"
+}

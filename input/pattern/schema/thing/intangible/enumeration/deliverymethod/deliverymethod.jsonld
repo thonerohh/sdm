@@ -1,0 +1,8 @@
+{
+    "@context": "https://schema.org/DeliveryMethod",
+    "@type": "DeliveryMethod",
+    "appliesToDeliveryMethod": "DeliveryChargeSpecification",
+    "availableDeliveryMethod": "Demand",
+    "deliveryMethod": "OrderAction",
+    "hasDeliveryMethod": "DeliveryEvent"
+}

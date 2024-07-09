@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/OfferItemCondition",
+    "@type": "OfferItemCondition",
+    "itemCondition": "Demand"
+}

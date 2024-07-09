@@ -1,0 +1,6 @@
+{
+    "@context": "https://schema.org/BedType",
+    "@type": "BedType",
+    "bed": "Accommodation",
+    "typeOfBed": "BedDetails"
+}

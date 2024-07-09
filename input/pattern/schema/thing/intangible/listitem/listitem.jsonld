@@ -1,0 +1,23 @@
+{
+    "@context": "https://schema.org/ListItem",
+    "@type": "ListItem",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "identifier": [],
+    "image": [],
+    "item": "Thing",
+    "itemListElement": "ItemList",
+    "mainEntityOfPage": [],
+    "name": "",
+    "negativeNotes": "Product",
+    "nextItem": {},
+    "position": "",
+    "positiveNotes": "Product",
+    "potentialAction": "Action",
+    "previousItem": {},
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": []
+}

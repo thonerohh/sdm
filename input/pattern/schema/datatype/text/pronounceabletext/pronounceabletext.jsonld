@@ -1,0 +1,8 @@
+{
+    "@context": "https://schema.org/PronounceableText",
+    "@type": "PronounceableText",
+    "inLanguage": "",
+    "phoneticText": "",
+    "speechToTextMarkup": "",
+    "textValue": ""
+}

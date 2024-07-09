@@ -1,0 +1,20 @@
+{
+    "@context": "https://schema.org/HealthPlanFormulary",
+    "@type": "HealthPlanFormulary",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "healthPlanCostSharing": "Boolean",
+    "healthPlanDrugTier": "",
+    "identifier": [],
+    "image": [],
+    "includesHealthPlanFormulary": "HealthInsurancePlan",
+    "mainEntityOfPage": [],
+    "name": "",
+    "offersPrescriptionByMail": "Boolean",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": []
+}

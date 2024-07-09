@@ -1,0 +1,23 @@
+{
+    "@context": "https://schema.org/EntryPoint",
+    "@type": "EntryPoint",
+    "actionApplication": "SoftwareApplication",
+    "actionPlatform": [],
+    "additionalType": [],
+    "alternateName": "",
+    "contentType": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "encodingType": "",
+    "httpMethod": "",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "target": "Action",
+    "url": [],
+    "urlTemplate": ""
+}

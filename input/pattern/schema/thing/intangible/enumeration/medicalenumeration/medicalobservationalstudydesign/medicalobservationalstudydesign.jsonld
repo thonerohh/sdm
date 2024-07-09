@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/MedicalObservationalStudyDesign",
+    "@type": "MedicalObservationalStudyDesign",
+    "studyDesign": "MedicalObservationalStudy"
+}

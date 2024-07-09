@@ -1,0 +1,7 @@
+{
+    "@context": "https://schema.org/ReturnLabelSourceEnumeration",
+    "@type": "ReturnLabelSourceEnumeration",
+    "customerRemorseReturnLabelSource": "MerchantReturnPolicy",
+    "itemDefectReturnLabelSource": "MerchantReturnPolicy",
+    "returnLabelSource": "MerchantReturnPolicy"
+}

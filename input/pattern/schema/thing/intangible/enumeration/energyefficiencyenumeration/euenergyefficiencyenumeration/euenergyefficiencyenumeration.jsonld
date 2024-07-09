@@ -1,0 +1,6 @@
+{
+    "@context": "https://schema.org/EUEnergyEfficiencyEnumeration",
+    "@type": "EUEnergyEfficiencyEnumeration",
+    "energyEfficiencyScaleMax": "EnergyConsumptionDetails",
+    "energyEfficiencyScaleMin": "EnergyConsumptionDetails"
+}

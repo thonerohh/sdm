@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org/Distance",
+    "@type": "Distance",
+    "additionalType": [],
+    "alternateName": "",
+    "depth": "OfferShippingDetails",
+    "description": "",
+    "disambiguatingDescription": "",
+    "distance": "ExerciseAction",
+    "flightDistance": "Flight",
+    "geoRadius": "GeoCircle",
+    "height": "MediaObject",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": [],
+    "width": "MediaObject"
+}

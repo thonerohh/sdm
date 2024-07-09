@@ -1,0 +1,6 @@
+{
+    "@context": "https://schema.org/OrderStatus",
+    "@type": "OrderStatus",
+    "orderItemStatus": "OrderItem",
+    "orderStatus": "Order"
+}

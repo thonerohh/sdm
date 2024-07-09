@@ -1,0 +1,6 @@
+{
+    "@context": "https://schema.org/MeasurementMethodEnum",
+    "@type": "MeasurementMethodEnum",
+    "measurementMethod": "DataCatalog",
+    "measurementTechnique": "DataCatalog"
+}

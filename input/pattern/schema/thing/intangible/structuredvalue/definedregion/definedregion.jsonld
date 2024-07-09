@@ -1,0 +1,23 @@
+{
+    "@context": "https://schema.org/DefinedRegion",
+    "@type": "DefinedRegion",
+    "additionalType": [],
+    "addressCountry": "",
+    "addressRegion": "",
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "postalCode": "",
+    "postalCodePrefix": "",
+    "postalCodeRange": "PostalCodeRangeSpecification",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "shippingDestination": "DeliveryTimeSettings",
+    "shippingOrigin": "OfferShippingDetails",
+    "subjectOf": "CreativeWork",
+    "url": []
+}

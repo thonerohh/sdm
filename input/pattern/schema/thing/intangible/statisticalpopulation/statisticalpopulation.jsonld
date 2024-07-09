@@ -1,0 +1,17 @@
+{
+    "@context": "https://schema.org/StatisticalPopulation",
+    "@type": "StatisticalPopulation",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "populationType": "Class",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": []
+}

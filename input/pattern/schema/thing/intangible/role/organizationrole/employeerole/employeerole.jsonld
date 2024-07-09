@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org/EmployeeRole",
+    "@type": "EmployeeRole",
+    "additionalType": [],
+    "alternateName": "",
+    "baseSalary": 0,
+    "description": "",
+    "disambiguatingDescription": "",
+    "endDate": "Date",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "numberedPosition": 0,
+    "potentialAction": "Action",
+    "roleName": [],
+    "salaryCurrency": "",
+    "sameAs": [],
+    "startDate": "Date",
+    "subjectOf": "CreativeWork",
+    "url": []
+}

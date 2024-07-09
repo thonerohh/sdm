@@ -1,0 +1,21 @@
+{
+    "@context": "https://schema.org/OwnershipInfo",
+    "@type": "OwnershipInfo",
+    "acquiredFrom": "Organization",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "ownedFrom": "DateTime",
+    "ownedThrough": "DateTime",
+    "owns": "Organization",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "typeOfGood": "Product",
+    "url": []
+}

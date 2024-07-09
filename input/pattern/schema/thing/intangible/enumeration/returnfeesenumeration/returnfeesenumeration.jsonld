@@ -1,0 +1,7 @@
+{
+    "@context": "https://schema.org/ReturnFeesEnumeration",
+    "@type": "ReturnFeesEnumeration",
+    "customerRemorseReturnFees": "MerchantReturnPolicy",
+    "itemDefectReturnFees": "MerchantReturnPolicy",
+    "returnFees": "MerchantReturnPolicy"
+}

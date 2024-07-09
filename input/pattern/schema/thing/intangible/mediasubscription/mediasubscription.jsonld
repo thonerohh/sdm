@@ -1,0 +1,19 @@
+{
+    "@context": "https://schema.org/MediaSubscription",
+    "@type": "MediaSubscription",
+    "additionalType": [],
+    "alternateName": "",
+    "authenticator": "Organization",
+    "description": "",
+    "disambiguatingDescription": "",
+    "expectsAcceptanceOf": "Offer",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "potentialAction": "Action",
+    "requiresSubscription": "ActionAccessSpecification",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": []
+}

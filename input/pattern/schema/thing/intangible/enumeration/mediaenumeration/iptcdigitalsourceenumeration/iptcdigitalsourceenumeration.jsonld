@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/IPTCDigitalSourceEnumeration",
+    "@type": "IPTCDigitalSourceEnumeration",
+    "digitalSourceType": "CreativeWork"
+}

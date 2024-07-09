@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/MedicalTrialDesign",
+    "@type": "MedicalTrialDesign",
+    "trialDesign": "MedicalTrial"
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "https://schema.org/PaymentMethod",
+    "@type": "PaymentMethod",
+    "acceptedPaymentMethod": "Demand",
+    "appliesToPaymentMethod": "PaymentChargeSpecification",
+    "paymentMethod": "Invoice"
+}

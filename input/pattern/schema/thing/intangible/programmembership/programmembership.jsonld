@@ -1,0 +1,23 @@
+{
+    "@context": "https://schema.org/ProgramMembership",
+    "@type": "ProgramMembership",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "hostingOrganization": "Organization",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "member": "Organization",
+    "memberOf": "Organization",
+    "membershipNumber": "",
+    "membershipPointsEarned": 0,
+    "name": "",
+    "potentialAction": "Action",
+    "programMembershipUsed": "Reservation",
+    "programName": "",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": []
+}

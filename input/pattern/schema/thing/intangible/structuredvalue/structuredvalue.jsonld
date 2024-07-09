@@ -1,0 +1,20 @@
+{
+    "@context": "https://schema.org/StructuredValue",
+    "@type": "StructuredValue",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "numberOfCredits": "Course",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "typicalCreditsPerTerm": "EducationalOccupationalProgram",
+    "url": [],
+    "value": "MonetaryAmount",
+    "valueReference": "PropertyValue"
+}

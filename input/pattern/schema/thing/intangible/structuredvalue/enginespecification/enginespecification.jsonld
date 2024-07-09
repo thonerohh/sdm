@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org/EngineSpecification",
+    "@type": "EngineSpecification",
+    "additionalType": [],
+    "alternateName": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "engineDisplacement": "QuantitativeValue",
+    "enginePower": "QuantitativeValue",
+    "engineType": [],
+    "fuelType": [],
+    "identifier": [],
+    "image": [],
+    "mainEntityOfPage": [],
+    "name": "",
+    "potentialAction": "Action",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "torque": "QuantitativeValue",
+    "url": [],
+    "vehicleEngine": "Vehicle"
+}

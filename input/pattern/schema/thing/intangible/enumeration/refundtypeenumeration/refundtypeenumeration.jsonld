@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/RefundTypeEnumeration",
+    "@type": "RefundTypeEnumeration",
+    "refundType": "MerchantReturnPolicy"
+}

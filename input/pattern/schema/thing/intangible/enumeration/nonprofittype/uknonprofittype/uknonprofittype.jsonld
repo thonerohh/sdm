@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/UKNonprofitType",
+    "@type": "UKNonprofitType",
+    "additionalType": ["https://schema.org/UKNonprofitType","https://schema.org/CharitableIncorporatedOrganization","https://schema.org/LimitedByGuaranteeCharity","https://schema.org/UKTrust","https://schema.org/UnincorporatedAssociationCharity"]
+}

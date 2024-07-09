@@ -1,0 +1,5 @@
+{
+    "@context": "https://schema.org/MusicReleaseFormatType",
+    "@type": "MusicReleaseFormatType",
+    "musicReleaseFormat": "MusicRelease"
+}

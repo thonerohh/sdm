@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org/AMRadioChannel",
+    "@type": "AMRadioChannel",
+    "additionalType": [],
+    "alternateName": "",
+    "broadcastChannelId": "",
+    "broadcastFrequency": "",
+    "broadcastServiceTier": "",
+    "description": "",
+    "disambiguatingDescription": "",
+    "genre": [],
+    "identifier": [],
+    "image": [],
+    "inBroadcastLineup": "CableOrSatelliteService",
+    "mainEntityOfPage": [],
+    "name": "",
+    "potentialAction": "Action",
+    "providesBroadcastService": "BroadcastService",
+    "sameAs": [],
+    "subjectOf": "CreativeWork",
+    "url": []
+}
