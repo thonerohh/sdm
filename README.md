@@ -28,17 +28,12 @@ Lead loveable packages from requirements.txt through pip over python to Your com
 - sys
 - os
 
-cLick ```run``` .b[utt] and follow instructions.
+cLick ```run``` .b[utt] head up and follow instructions.
 
 After inserting all data there will be file generated in output presumingly
 Also You can run it through IDE like VS, VS Code, JetBrains or everything You like
 
-We are nothing without:
+Cannot compain why schema.org using 4 breadcrumbs, it sucks 
 
-> Leaving house with forgiveness of closed door
-
-> Food-ready forgiveness 
-
-> Jokes about homeless
-
-Are You seriously SCHEMA ORG??? 4 BREADCRUMBS????? 
+By the way thank You ChatGPT
+> or should I call You Chad in google Youtube comments 🧐
